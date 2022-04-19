@@ -1,0 +1,277 @@
+@font-face {
+  font-family: opensans;
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: opensanslight;
+  src: url('./fonts/OpenSans-Light.ttf');
+}
+
+body {
+  background: rgb(239,243,255);
+  background: linear-gradient(180deg, rgba(205,219,255,1) 0%, rgba(231,255,235,1) 100%);
+  min-height: 100vh;
+  font-family: opensans;
+  margin: 0;
+  padding:0
+
+}
+.main-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding-bottom: 45px;
+  z-index: 2;
+}
+
+.bkg{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .bkg{
+    top: 22vh
+  }
+}
+
+#dot-anim {
+  visibility: hidden;
+}
+
+.dot-0, .dot-1, .dot-2, .dot-3  {
+  visibility: hidden
+}
+
+.dot-1 span:nth-child(1) {
+  visibility: visible
+}
+
+.dot-2 span:nth-child(1) {
+  visibility: visible
+}
+
+.dot-2 span:nth-child(2) {
+  visibility: visible
+}
+
+.dot-3 span:nth-child(1) {
+  visibility: visible
+}
+.dot-3 span:nth-child(2) {
+  visibility: visible
+}
+.dot-3 span:nth-child(3) {
+  visibility: visible
+}
+
+.bkg img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.logo-wrapper img {
+  margin-top:30px;
+  width: 150px
+}
+
+@media only screen and (max-width: 1279px) {
+  .logo-wrapper img {
+    margin-left: 30px
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .logo-wrapper img {
+    position: relative;
+    right: 40px
+  }
+}
+
+footer img{
+  width: 12px;
+  margin-right: 8px;
+}
+
+.contact-set {
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+}
+
+.mar-r-10p {
+  margin-right: 10%
+}
+
+@media only screen and (max-width: 500px){
+  .mar-r-10p {
+  margin-right: 6%
+} 
+}
+
+
+
+
+.rotate {
+  color: #f80b77;
+  transform: rotate(0deg);
+  display: inline-block;
+  font-family: serif;
+  font-size: 54px;
+}
+
+.shift-left{
+  position: relative;
+  position: relative;
+  right: 6px;
+  color: #2791ed
+}
+
+.move-right{
+  margin-right: 2px
+}
+
+.border{
+     width: 90px;
+    border: solid 2px#b6d5fc;
+    position: relative;
+    bottom: 9px;
+    left: 12px;
+    border-radius: 3px;
+}
+
+main{
+  margin-top: 132px;
+}
+
+@media only screen and (max-width: 600px){
+  main {
+    margin-top: 102px;
+  }
+}
+
+main h2, main h3{
+  margin: 0;
+}
+
+main h2 {
+  font-size: 54px;
+  text-align: center;
+  line-height: 63px;
+}
+
+main h3 {
+  font-size: 23px;
+  font-weight: 900;
+  text-align: center;
+  font-family: opensanslight;
+  margin-top: 10px;
+  text-shadow: 0px 2px 4px #0000003b;
+}
+
+
+.timer-blocks{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+.time-quant {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72px;
+  justify-content: center;
+  align-items: center;
+  border: dotted 1px #000000b5;
+  margin-right: 24px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px -3px rgb(0 0 0 / 75%);
+}
+
+.seconds{
+  margin-right: 0 !important
+}
+
+.time-quant .value {
+    font-size: 50px;
+    transform: scale(0.9,1);
+    line-height: 50px;
+    font-weight: bold;
+    text-shadow: 0px 3px 5px #00000052;
+    
+}
+
+.time-quant .type {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 3px 5px #00000052;
+}
+
+
+@media only screen and (max-width: 600px){
+  .time-quant{
+    width: 48px;
+    margin-right: 19px;
+  }
+
+  .time-quant .value {
+    font-size: 40px
+  }
+}
+
+footer {
+    
+    font-size: 17px;
+    font-family: monospace;
+    width: 100%;
+    background: #1f3c67;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    color:#fff;
+    justify-content: center;
+}
+
+.red {
+  color: red;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.shift-text-left{
+  position: relative;
+  right: 2px
+}
+
+.shift-text-left-1{
+  position: relative;
+  right: 1px
+}
